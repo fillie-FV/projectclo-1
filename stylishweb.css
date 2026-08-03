@@ -1,0 +1,502 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0b0b; /* warna bg load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* Ganti background/foto*/
+    background-image: url('stars.jpg'); 
+    background-size: cover;      /* fotonya menutupi seluruh layar */
+    background-position: center;  /* lokasi/posisi */
+    background-attachment: fixed; /* effect parralax */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* background login */
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 { margin: 0; color: #333; }
+hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+
+fieldset { border: none; padding: 0; text-align: left; }
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Tombol utama Login */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Wadah Tombol Bawah (Register & Logout) */
+.container-tombol {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* BIAR DI TENGAH */
+    gap: 10px;
+}
+
+.container-tombol button {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background: #fffefe53;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tambahkan input[type="tel"] di baris yang sama dengan text & password */
+input[type="text"], 
+input[type="password"], 
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Aturan umum untuk semua body (font, flex, dll) */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Khusus Background Halaman LOGIN */
+.bg-login {
+    background-image: url('bg-login.jpg');
+}
+
+/* Khusus Background Halaman REGISTER */
+.bg-register {
+    background-image: url('regist.jpg'); /* Ganti foto register */
+}
+/* Khusus kotak di halaman Register */
+.bg-register .login-container {
+    background-color: #0a5aa0; /* Ganti warna di sini (contoh: hijau sangat muda) */
+    border: 2px solid #0c0b0b;   /* Tambah garis pinggir biar makin tegas */
+}
+
+/* --- NAVIGATION BAR --- */
+/* --- NAVIGATION BAR --- */
+.navbar {
+    background-color: #1d0895;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+ /* --- ganti warna hover --- */
+.nav-links a:hover {
+    color: #0fe6e6;
+}
+
+/* --- HERO SECTION (Bisa diatur ukurannya) --- */
+.hero {
+    /* UBAH PERSENTASE INI UNTUK TINGGI BACKGROUND  */
+    height: 100vh; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Background dengan overlay gelap agar tulisan putih terbaca jelas */
+    background: linear-gradient(rgba(157, 157, 157, 0.5), rgba(0,0,0,0.5)), url('bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    /* UBAH UKURAN FONT DI SINI */
+    font-size: 3.5rem; 
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn-shop {
+    padding: 15px 40px;
+    background-color: #062c73;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn-shop:hover {
+    background-color: #4005ae;
+    transform: scale(1.1);
+}
+
+/* --- SECTION PRODUK --- */
+.container-produk {
+    padding: 50px 10%;
+    background-color: #535050;
+    text-align: center;
+}
+
+.judul-section {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Bungkus kotak-kotak produk */
+.grid-produk {
+    display: flex;
+    flex-wrap: wrap; /*  */
+    justify-content:  center; /* posisi */
+    gap: 25px;
+}
+
+/* Kotak masing-masing produk */
+.card-produk {
+    background: white;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden; /* Biar gambar gak keluar jalur radius */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* EFEK HOVER: Kotak naik dikit pas disentuh */
+.card-produk:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-produk img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Biar gambar gak gepeng */
+}
+
+.info-produk {
+    padding: 15px;
+}
+
+.info-produk h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.harga {
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn-beli {
+    display: block;
+    padding: 10px;
+    background-color: #1b5e20;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+ /* butbeli*/
+.btn-beli:hover {
+    background-color: #0ae107;
+    color: #333;
+}
+/* --- fitur scroll --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- HALAMAN DETAIL PRODUK --- */
+.container-detail {
+    display: flex;
+    max-width: 1000px;
+    margin: 120px auto; /* Jarak dari navbar */
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(157, 157, 157, 0.5);
+    gap: 40px;
+}
+
+.detail-gambar img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.detail-info {
+    text-align: left;
+}
+
+.detail-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.detail-info .harga-detail {
+    font-size: 24px;
+    color: #2e7d32;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.detail-info p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-keranjang {
+    padding: 15px 30px;
+    background-color: #1b5e20;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-keranjang:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+
+/* --- HALAMAN DETAIL PRODUK --- */
+.container-detail {
+    display: flex;
+    max-width: 1000px;
+    margin: 120px auto; /* Jarak dari navbar */
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    gap: 40px;
+}
+
+.detail-gambar img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.detail-info {
+    text-align: left;
+}
+
+.detail-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.detail-info .harga-detail {
+    font-size: 24px;
+    color: #2e7d32;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.detail-info p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn-keranjang {
+    padding: 15px 30px;
+    background-color: #1b5e20;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* --- warna keranjang --- */
+.btn-keranjang:hover {
+    background-color: #08db79;
+    color: #333;
+}
+
+/* --- HALAMAN KERANJANG & CHECKOUT --- */
+.container-checkout {
+    display: flex;
+    max-width: 1100px;
+    margin: 100px auto; /* Jarak aman dari navbar */
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap; /* Biar responsif kalau dibuka di layar kecil */
+}
+
+/* Kolom Kiri: Keranjang */
+.kolom-keranjang {
+    flex: 2;
+    min-width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.item-keranjang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-keranjang img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detail-item {
+    flex: 1;
+}
+
+.detail-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.detail-item .harga-checkout {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Kolom Kanan: Form Checkout */
+.kolom-checkout {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #1b5e20; /* Aksen hijau di atas */
+    height: fit-content;
+}
+
+.kolom-checkout h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-checkout label {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-checkout input, .form-checkout select, .form-checkout textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+    
+}
+
+.total-bayar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0;
+    padding-top: 15px;
+    border-top: 2px dashed #eee;
+}
+
+
+
+/* 1. Kondisi awal tombol warna BIRU */
+.hover {
+    width: 100%;
+    padding: 12px;
+    background-color: #13c9f7; /*  */
+    color: rgb(22, 137, 203);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s; /* Biar pas kursor warnanya berubah mulus */
+}
+
+/* checkout (Hover) */
+.hover:hover {
+    background-color: #0056b3; /* Berubah warna */
+    color: white;
+    transform: scale(1.02);
+}

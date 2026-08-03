@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keranjang & Checkout - FV Store</title>
+    <link rel="stylesheet" href="stylishweb.css">
+</head>
+<body style="display: block; background-color: #ffffff; margin: 0;">
+
+    <nav class="navbar">
+        <h2 style="color: white; margin: 0;">FV Store</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#katalog">Produk</a>
+            <a href="regist2.html">Daftar</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="container-checkout">
+        
+        <div class="kolom-keranjang">
+            <h2 style="margin-top: 0; border-bottom: 2px solid #1b5e20; padding-bottom: 10px;">Keranjang Belanja</h2>
+            
+            <div class="item-keranjang">
+                <img src="oversize.jpg" alt="Kaos">
+                <div class="detail-item">
+                    <h3>Kaos Oversize</h3>
+                    <span class="harga-checkout">Rp 85.000</span>
+                </div>
+                <div><b>1 Pcs</b></div>
+            </div>
+
+            <div class="item-keranjang">
+                <img src="jordan.jpg" alt="Sepatu">
+                <div class="detail-item">
+                    <h3>Jordan High Shoes</h3>
+                    <span class="harga-checkout">Rp 150.000</span>
+                </div>
+                <div><b>1 Pcs</b></div>
+            </div>
+            
+            <br>
+            <a href="indexw.html#katalog" style="color: #1b5e20; text-decoration: none; font-weight: bold;">← Tambah Barang Lagi</a>
+        </div>
+
+        <div class="kolom-checkout">
+            <h2>Detail Pengiriman</h2>
+            <form action="indexw.html" onsubmit="alert('Pesanan Berhasil! Terima kasih sudah berbelanja di FV Store.')" class="form-checkout">
+                
+                <label>Nama Lengkap</label>
+                <input type="text" required placeholder="Masukkan nama kamu">
+
+                <label>Nomor HP (WhatsApp)</label>
+                <input type="tel" required placeholder="08xxxxxxxxxx">
+
+                <label>Metode Pembayaran</label>
+                <select required>
+                    <option value="">-- Pilih Pembayaran --</option>
+                    <option value="cod">COD (Bayar di Tempat)</option>
+                    <option value="gopay">Dana / GoPay</option>
+                    <option value="tf">Transfer Bank</option>
+                    
+                </select>
+
+                <label>Alamat Lengkap</label>
+                <textarea rows="3" required placeholder="Nama jalan, nomor rumah, RT/RW, kecamatan"></textarea>
+
+                <div class="total-bayar">
+                    <span>Total Pembayaran:</span>
+                    <span style="color: #2e7d32;">Rp 235.000</span>
+                </div>
+
+                <input type="submit" value="KONFIRMASI PESANAN" style="background-color: #1b5e20;">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
